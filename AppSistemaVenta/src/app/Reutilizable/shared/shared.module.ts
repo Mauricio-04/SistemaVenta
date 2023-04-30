@@ -5,13 +5,14 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 //Componentes de angular material
-
-import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import{MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 import {LayoutModule} from '@angular/cdk/layout';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -35,13 +36,12 @@ import {MomentDateModule} from '@angular/material-moment-adapter';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
   ],exports:[
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
     MatCardModule,
-    MatInputModule,
     MatSelectModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
@@ -60,7 +60,9 @@ import {MomentDateModule} from '@angular/material-moment-adapter';
     MatAutocompleteModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MomentDateModule
+    MomentDateModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers:[
     MatDatepickerModule,

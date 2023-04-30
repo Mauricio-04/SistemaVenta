@@ -48,10 +48,11 @@ export class ModalUsuarioComponent implements OnInit {
         if(data.status)this.listaRoles = data.value
       },
       error:(e) =>{}
-    })
+    });
   }
 
   ngOnInit(): void {
+
     if(this.formularioUsuario != null){
       this.formularioUsuario.patchValue({
         nombreCompleto:this.datosUsuario.nombreCompleto,
@@ -59,7 +60,7 @@ export class ModalUsuarioComponent implements OnInit {
         idRol:this.datosUsuario.idRol,
         clave:this.datosUsuario.clave,
         esActivo:this.datosUsuario.esActivo.toString()
-      })
+      });
     }
   }
 
