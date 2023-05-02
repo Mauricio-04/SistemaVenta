@@ -33,7 +33,8 @@ export class UsuarioComponent implements OnInit,AfterViewInit{
       next:(data) =>{
         if(data.status)
        // this.dataListaUsuarios = data.value
-        this.dataListaUsuarios = new MatTableDataSource(data.value);
+        this.dataListaUsuarios = new MatTableDataSource(data.value),
+        this.dataListaUsuarios.paginator = this.paginacionTabla;
         else
         this._utilidadServicio.mostrarAlerta("No se encontraron datos","Opps!");
       },

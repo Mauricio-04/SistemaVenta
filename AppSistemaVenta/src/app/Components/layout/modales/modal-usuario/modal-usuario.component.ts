@@ -102,7 +102,7 @@ export class ModalUsuarioComponent implements OnInit {
           }
         },
         error:(e) =>{}
-      })
+      });
     }
 
 
